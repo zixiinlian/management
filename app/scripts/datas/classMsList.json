@@ -1,0 +1,38 @@
+{
+  "classMsList":[
+    {
+      "name": "ms1",
+      "url": "http://www.baidu.com",
+      "icon": "test",
+      "submenuList": [
+        {
+          "name": "ms1",
+          "url": "http://www.baidu.com",
+          "icon": "test"
+        },
+        {
+          "name": "ms1",
+          "url": "http://www.baidu.com",
+          "icon": "test"
+        }
+      ]
+    },
+    {
+      "name": "ms2",
+      "url": "http://www.baidu.com",
+      "icon": "test",
+      "submenuList": [
+        {
+          "name": "ms2",
+          "url": "http://www.baidu.com",
+          "icon": "test"
+        },
+        {
+          "name": "ms2",
+          "url": "http://www.baidu.com",
+          "icon": "test"
+        }
+      ]
+    }
+  ]
+}
