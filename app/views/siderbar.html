@@ -9,10 +9,10 @@
 					<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu" ng-show="isShow">
-						<li >
+						<li ng-repeat="submenuItem in msItem.submenuList">
 							<a href="layout_sidebar_fixed.html">
 							<i class="icon-anchor"></i>
-							Sidebar Fixed Page</a>
+							{{submenuItem.name}}</a>
 						</li>
 					</ul>
 				</li>

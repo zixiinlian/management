@@ -1,34 +1,39 @@
 {
   "classMsList":[
     {
-      "name": "ms1",
+      "name": "开班管理",
       "url": "http://www.baidu.com",
       "icon": "test",
       "submenuList": [
         {
-          "name": "ms1",
+          "name": "课程管理",
           "url": "http://www.baidu.com",
           "icon": "test"
         },
         {
-          "name": "ms1",
+          "name": "班级管理",
+          "url": "http://www.baidu.com",
+          "icon": "test"
+        },
+        {
+          "name": "类别管理",
           "url": "http://www.baidu.com",
           "icon": "test"
         }
       ]
     },
     {
-      "name": "ms2",
+      "name": "课件管理",
       "url": "http://www.baidu.com",
       "icon": "test",
       "submenuList": [
         {
-          "name": "ms2",
+          "name": "内容管理",
           "url": "http://www.baidu.com",
           "icon": "test"
         },
         {
-          "name": "ms2",
+          "name": "列表管理",
           "url": "http://www.baidu.com",
           "icon": "test"
         }
