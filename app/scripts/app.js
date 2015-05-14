@@ -17,7 +17,7 @@ var ManagementApp = angular.module('managementApp', [
     'ngTouch'
   ]);
 
-  ManagementApp.config(function ($routeProvider) {
+  ManagementApp.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html'
@@ -25,9 +25,12 @@ var ManagementApp = angular.module('managementApp', [
       })
       .when('/class', {
         templateUrl: 'views/class.html',
-        controller: 'ClassCtrl'
+        // controller: 'ClassCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
-  });
+
+      //use the HTML5 History API
+      $locationProvider.html5Mode(true);
+  }]);
