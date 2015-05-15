@@ -1,9 +1,9 @@
 'use strict';
 
-ManagementApp.directive('msHeader', function(){
+ManagementApp.directive('treeNav', function(){
 	return{
 		restrict:'E',
-		templateUrl:'views/header.html',
+		templateUrl:'views/treeNav.html',
 		replace: true,
 		transclude: false,
 		scope: false

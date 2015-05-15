@@ -23,6 +23,10 @@ var ManagementApp = angular.module('managementApp', [
         templateUrl: 'views/main.html'
         // controller: 'MainCtrl'
       })
+      .when('/center', {
+        templateUrl: 'views/center.html'
+        // controller: 'MainCtrl'
+      })
       .when('/class', {
         templateUrl: 'views/class.html',
         // controller: 'ClassCtrl'
