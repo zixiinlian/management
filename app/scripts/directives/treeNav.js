@@ -6,6 +6,7 @@ ManagementApp.directive('treeNav', function(){
 		templateUrl:'views/treeNav.html',
 		replace: true,
 		transclude: false,
-		scope: false
+		scope: false,
+		controller:'infoList'
 	};
 });
