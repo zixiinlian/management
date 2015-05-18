@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>AngularJS Test</title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/main.js"></script>
+</head>
+<body ng-controller="contrl">
+    <div ng-view></div>
+    <div ng-include="url"></div>
+    <div>
+        <button ng-click="filterAge()">筛选时间</button>
+    </div>
+    <script type="text/ng-template" id="views/main.html">
+        <div>main</div>
+    </script>
+    <script type="text/ng-template" id="views/center.html">
+        <div>center</div>
+    </script>
+    <script type="text/ng-template" id="views/class.html">
+        <div>main</div>
+    </script>
+</body>
+</html>

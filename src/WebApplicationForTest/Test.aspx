@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="WebApplicationForTest.Test" %>
 
-<script type="text/ng-template">
+
 <div>
     <% foreach (var member in Members)
        { %>
@@ -11,4 +11,3 @@
     </ul>
     <% } %>
 </div>
-</script>
