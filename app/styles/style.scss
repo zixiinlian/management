@@ -609,7 +609,7 @@ Page content
   display: block;
   position: relative;
   margin: 0;
-  padding: 10px 13px 10px 15px;
+  padding: 12px 13px 12px 15px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
@@ -659,39 +659,6 @@ Page content
   border-right: 4px solid #d12610;
 }  
 
-.page-sidebar ul > li > a > .arrow:before {  
-   float: right;
-   margin-top: 0px;
-   margin-right: 5px;
-   display: inline;
-   font-size: 16px;
-   font-family: FontAwesome;
-   height: auto;
-   content: "\f104";
-   font-weight: 300;
-   text-shadow:none;
-}
-
-.page-sidebar ul.page-sidebar-menu-circle-icons > li > a > .arrow:before {
-  margin-top: 3px;
-} 
-
-.page-sidebar ul > li.active > a > .arrow:before {
-  margin-right: 1px;
-}
-
-.page-sidebar-menu > li > a > .arrow.open:before {   
-   float: right;
-   margin-top: 0px;
-   margin-right: 3px;
-   display: inline;
-   font-family: FontAwesome;
-   height: auto;
-   font-size: 16px;
-   content: "\f107";
-   font-weight: 300;
-   text-shadow:none;
-}
 
 /* bagin: sidebar menu badges */
 .page-sidebar-menu li > a .badge {
@@ -726,7 +693,7 @@ Page content
 .page-sidebar-menu > li > ul.sub-menu > li > a {
   display: block;
   margin: 0px 0px 0px 0px;
-  padding: 5px 0px;
+  padding: 6px 0px;
   padding-left: 35px !important;
   text-decoration: none;
   font-size: 14px;

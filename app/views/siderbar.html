@@ -2,7 +2,7 @@
 	<div class="page-sidebar-wrapper">
 		<div class="page-sidebar navbar-collapse collapse">
 			<ul class="page-sidebar-menu">
-				<li ng-repeat="msItem in classMsList">
+				<li ng-repeat="msItem in classMsList" ng-class="{'active':isShow}">
 					<a href="javascript:;" ng-click="isShow = !isShow" >
 					<i class="icon-puzzle"></i>
 					<span class="title">{{msItem.name}}</span>

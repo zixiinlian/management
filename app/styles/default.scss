@@ -4,6 +4,7 @@ Default theme
 /***
 Reset and overrides  
 ***/
+@import "iconSprite";
 body {
   color: #222222;
 }
@@ -63,16 +64,19 @@ Page header
 Page sidebar
 ***/
 .page-sidebar {
-  background: #35363a;
+  background: #34495e;
 }
-ul.page-sidebar-menu > li {
-  border-bottom: 1px solid #414247;
-}
+
 ul.page-sidebar-menu > li > a {
   color: #eee;
 }
 ul.page-sidebar-menu > li > a > .arrow {
-  color: #414247;
+  @include iconSprite(arrow-g); 
+  position:absolute;
+  right: 10px;
+}
+ul.page-sidebar-menu > li.active > a > .arrow {
+  @include iconSprite(arrow-w); 
 }
 ul.page-sidebar-menu > li:first-child {
   border-bottom: 1px solid transparent;
@@ -88,7 +92,7 @@ ul.page-sidebar-menu > li a i {
 ul.page-sidebar-menu > li.open > a,
 ul.page-sidebar-menu > li > a:hover,
 ul.page-sidebar-menu > li:hover > a {
-  background: #2B2B30;
+  background: #243342;
 }
 
 ul.page-sidebar-menu > li.open,
@@ -98,7 +102,7 @@ ul.page-sidebar-menu > li.active {
 
 ul.page-sidebar-menu > li.active > a {
   color: #f1f1f1;
-  background: #27272B !important;
+  background: #243342 !important;
 }
 ul.page-sidebar-menu > li.active > a i {
   color: #ffffff;
@@ -109,37 +113,21 @@ ul.page-sidebar-menu > li > ul.sub-menu > li:first-child {
 ul.page-sidebar-menu > li > ul.sub-menu > li.active > a,
 ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
   color: #ffffff !important;
-  background: #414247 !important;
+  background: #243342 !important;
 }
 ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
-  background: #414247 !important;
+  background: #243342 !important;
 }
 /* 3rd level sub menu */
 ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li.active > a,
 ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li > a:hover,
 ul.page-sidebar-menu > li > ul.sub-menu li.open > a {
   color: #ffffff !important;
-  background: #414247 !important;
+  background: #243342 !important;
 }
 /* font color for all sub menu links*/
 ul.page-sidebar-menu li > ul.sub-menu > li > a {
   color: #cecfd3;
-}
-/* menu arrows */
-ul.page-sidebar-menu > li > a .arrow:before,
-ul.page-sidebar-menu > li > a .arrow.open:before {
-  color: #666 !important;
-}
-ul.page-sidebar-menu > li > ul.sub-menu a .arrow:before,
-ul.page-sidebar-menu > li > ul.sub-menu a .arrow.open:before {
-  color: #999ba2 !important;
-}
-ul.page-sidebar-menu > li > a > .arrow.open:before {
-  color: #a6a8ae !important;
-}
-ul.page-sidebar-menu > li.active > a .arrow:before,
-ul.page-sidebar-menu > li.active > a .arrow.open:before {
-  color: #ffffff !important;
 }
 /* sub menu bg color on hover menu item */
 .page-sidebar-closed ul.page-sidebar-menu > li:hover .sub-menu {
