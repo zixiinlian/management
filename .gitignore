@@ -5,3 +5,4 @@ dist
 bower_components
 /src/WebApplicationForTest/bin
 /src/WebApplicationForTest/obj/Debug
+/src/WebApplicationForTest/packages
