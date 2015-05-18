@@ -8,6 +8,7 @@ body{
 .ms-header{
   height:100px;
   background: #fafafa;
+  border-bottom: 1px solid #d4d8d8;
 }
 .ms-siderbar{
   width: 215px;
@@ -18,4 +19,16 @@ body{
 }
 .ms-main{
   padding-left:220px;
+}
+.ms-logo{
+  padding: 22px 0 0 20px;
+  display: block;
+  width:350px;
+}
+.ms-logo-wx{
+  display: block;
+  position:absolute;
+  right:30px;
+  top: 32px;
+  width:100px;
 }
