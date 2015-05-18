@@ -3,25 +3,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>AngularJS Test</title>
-    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/angular.js"></script>
     <script src="Scripts/angular-route.js"></script>
     <script src="Scripts/main.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
 </head>
 <body ng-controller="contrl">
+    <h3>ngView</h3>
     <div ng-view></div>
+    <br />
+    <h3>ngInclude</h3>
     <div ng-include="url"></div>
     <div>
-        <button ng-click="filterAge()">筛选时间</button>
+        <button ng-click="filterAge()" class="btn btn-primary">筛选时间</button>
     </div>
+
+    <br />
+    <h3>ngSrc iframe</h3>
+    <!--<button ng-src="notFilterAge()" class="btn btn-success">不筛选</button>-->
+    <div style="border:1px solid red;">
+        <iframe ng-src="{{newUrl}}" style="height:800px;width:1000px;"></iframe>
+    </div>
+
+    
+
     <script type="text/ng-template" id="views/main.html">
         <div>main</div>
     </script>
+
     <script type="text/ng-template" id="views/center.html">
         <div>center</div>
     </script>
+
     <script type="text/ng-template" id="views/class.html">
-        <div>main</div>
+        <div>class</div>
     </script>
 </body>
 </html>

@@ -31,9 +31,25 @@
         //$locationProvider.html5Mode(true);
     }]);
 
-    app.controller('contrl', ['$scope', function ($scope) {
+    app.controller('contrl', ['$scope', '$location', function ($scope, $location) {
+
+        //$scope.$root.$on('$locationChangeStart', function (e) {
+        //    //e.stopPropagation();
+        //    e.preventDefault();
+        //    $scope.url = $location.url();
+        //});
+
+        $scope.newUrl = '/test.aspx';
+
+        $scope.notFilterAge = function () {
+            $scope.newUrl = '/test.aspx';
+        };
+
         $scope.filterAge = function () {
             $scope.url = '/test.aspx?age=23';
         };
+
+
     }]);
+
 })(angular, jQuery);
