@@ -1,4 +1,10 @@
 <div class="ms-siderbar" ng-controller="SiderbarController">
+	<div class="my-profile">
+		<a href="javascript:;" class="my-pic">
+			<img src="http://i2.hjfile.cn/f200/26/70/3032670.jpg"  width="50" height="50"/>
+			<br>zixinliango
+		</a>
+	</div>
 	<div class="page-sidebar-wrapper">
 		<div class="page-sidebar navbar-collapse collapse">
 			<ul class="page-sidebar-menu">
@@ -10,7 +16,7 @@
 					</a>
 					<ul class="sub-menu" ng-show="isShow">
 						<li ng-repeat="submenuItem in msItem.submenuList">
-							<a ng-href="{{submenuItem.url}}">
+							<a ng-href="{{submenuItem.url}}" ng-click="setActive()">
 							<i class="icon-{{submenuItem.icon}}"></i>
 							{{submenuItem.name}}</a>
 						</li>

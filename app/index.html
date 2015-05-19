@@ -28,9 +28,11 @@
     <!-- Add your site or application content here -->
     
     <div class="wrapper">
-      <div ng-include="'views/header.html'"></div>
       <div ng-include="'views/siderbar.html'"></div>
-      <div ng-view="" class="ms-main"></div>
+      <div class="ms-main">
+            <div ng-include="'views/header.html'"></div>
+            <div ng-view="" class="ms-view"></div>
+      </div>
     </div>
 
 
