@@ -12,3 +12,13 @@
 .icon-calendar{
     @include iconSprite(calendar); 
 }
+
+.icon-open{
+    @include iconSprite(tree-open); 
+}
+.icon-close{
+    @include iconSprite(tree-close); 
+}
+.icon-zcontact{
+    @include iconSprite(tree-zcontact);width: auto;display: block;height: auto;padding-top: 14px;margin-top: -14px;;
+}

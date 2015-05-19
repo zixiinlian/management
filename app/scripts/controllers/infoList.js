@@ -17,34 +17,31 @@ ManagementApp.controller('infoList',function($scope,$http){
 						arguments.callee(list[i][j], $ul)
 					} else {
 						if(list[i].url){
-							liInner = '<a href="'+list[i].url+'">'+list[i][j]+'</a>'
+							liInner = '<a href="'+list[i].url+'">'+list[i].name+'</a>'
 						}else{
-							liInner = '<span>' + list[i][j] + '</span>'
+							liInner = '<div class="tree-head"><i class="icon-open"></i>' + list[i].name + '</div>'
 						}
-						$li.append(liInner).appendTo(parent)
-						
+						$li.html(liInner).appendTo(parent)
 					}
 				}
 			}
 	}
 	$scope.toggleFn = function(){
-//		$('.tree .subList').hide();
-		$('.tree span').click(function(){
+//		$('.tree .tree-head i').addClass('icon-open');
+		$('.tree i').eq(0).addClass('icon-close');
+		$('.tree i').eq(1).addClass('icon-close');
+		$('.tree .tree-head').click(function(){
 			$(this).next('.subList').show();
 			$(this).parent().siblings().children('.subList').hide();
 			if($(this).next().css('display') == 'block'){
-				
+				$(this).children('i').addClass('icon-close').removeClass('icon-open');
+				$(this).parent().siblings().children('.tree-head').children('i').removeClass('icon-close').addClass('icon-open')
 			}
-			
-			
 		})
-		
+		$('.tree ul  li').addClass('icon-zcontact')
 	}
 	
 	
-	$scope.clickVal = function(){
-		$scope.showV = !$scope.showV;
-	};
 	
 })
 
