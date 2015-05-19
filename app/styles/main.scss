@@ -2,8 +2,8 @@
 
 $grayBg: #ecf0f1;
 
-body{
-	background: $grayBg;
+.wrapper{
+  background: #34495e;
 }
 .ms-header{
     background: #fff;
@@ -21,10 +21,12 @@ body{
 }
 .ms-siderbar{
   width: 230px;
-  float:left;
+  position:absolute;
+  top: 0;
+  left: 0;
   background: #34495e;
-  min-height:100%;
-  height:500px;
+  min-height:500px;
+  height:100%;
   .my-profile{
     background: #02bf87;
     width: 100%;
@@ -46,7 +48,10 @@ body{
   }
 }
 .ms-main{
-  padding-left:230px;
+  margin-left:230px;
+  background: $grayBg;
+  min-height: 600px;
+  overflow: hidden;
 }
 .ms-logo{
   display: block;
@@ -58,4 +63,7 @@ body{
   right:30px;
   top: 32px;
   width:100px;
+}
+.ms-view{
+  padding:20px;
 }
