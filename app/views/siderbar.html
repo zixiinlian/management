@@ -16,7 +16,7 @@
 					</a>
 					<ul class="sub-menu" ng-show="isShow">
 						<li ng-repeat="submenuItem in msItem.submenuList">
-							<a ng-href="{{submenuItem.url}}" ng-click="setActive()">
+							<a ng-href="{{submenuItem.url}}" ng-click="setActive($event)">
 							<i class="icon-{{submenuItem.icon}}"></i>
 							{{submenuItem.name}}</a>
 						</li>
