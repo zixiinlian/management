@@ -3,3 +3,12 @@
 .icon-search{
     @include iconSprite(search); 
 }
+.icon-message{
+    @include iconSprite(message); 
+}
+.icon-organization{
+    @include iconSprite(organization); 
+}
+.icon-calendar{
+    @include iconSprite(calendar); 
+}
