@@ -363,11 +363,11 @@ Form Layouts
 
 /* Checkboxes */
 .checkbox,
-.form-horizontal .checkbox {
+.checkbox {
   padding: 0;
 }
 .checkbox > label,
-.form-horizontal .checkbox > label {
+.checkbox > label {
   padding-left: 0;
 }
 
@@ -393,13 +393,13 @@ Form Layouts
 }
 
 /* Radio buttons in horizontal forms */
-.form-horizontal .radio-list .radio {
+.radio-list .radio {
   padding-top: 1px;
 }
-.form-horizontal .radio-list > label {
+.radio-list > label {
   margin-bottom: 0;
 }
-.form-horizontal .radio > span {
+.radio > span {
   margin-top: 2px;
 }
 
